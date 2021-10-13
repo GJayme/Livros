@@ -6,8 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/LivrosLv"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/LivrosRv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
