@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
@@ -124,5 +125,18 @@ class MainActivity : AppCompatActivity(), OnLivroClickListener {
         val consultarLivrosIntent = Intent(this, LivroActivity::class.java)
         consultarLivrosIntent.putExtra(EXTRA_LIVRO, livro)
         startActivity(consultarLivrosIntent)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.atualizarMi -> {
+            livrosAdapter.notifyDataSetChanged()
+            true
+        }
+        else -> { false }
     }
 }

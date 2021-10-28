@@ -1,6 +1,5 @@
 package br.edu.ifsp.ads.pdm.livros.model
 
-import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
@@ -81,7 +80,7 @@ class LivroSqlite(contexto: Context): LivroDao  {
         val livroCursor = livrosBd.rawQuery("SELECT * FROM ${TABELA_LIVRO}",null);
 
         if (livroCursor.moveToFirst()) {
-            while (!livroCursor.isAfterLast()) {
+            while (!livroCursor.isAfterLast) {
                 val livro: Livro = Livro(
                     livroCursor.getString(livroCursor.getColumnIndexOrThrow(COLUNA_TITULO)),
                     livroCursor.getString(livroCursor.getColumnIndexOrThrow(COLUNA_ISBN)),

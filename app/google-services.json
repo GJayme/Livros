@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "591928410494",
+    "firebase_url": "https://livrosfirebase-78f49-default-rtdb.firebaseio.com",
+    "project_id": "livrosfirebase-78f49",
+    "storage_bucket": "livrosfirebase-78f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591928410494:android:00f3121d909dc2c112f32f",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.ads.pdm.livros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591928410494-7sdq90p9utpuln8nkdl7vvacspbklkdc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ifsp.ads.pdm.livros",
+            "certificate_hash": "7e06a4c5fde1d054e8b684a6f65155c8e262ae9f"
+          }
+        },
+        {
+          "client_id": "591928410494-ohfnnj2poc889kpsnri2amdohifu2arj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZpygkSi2_K0ue8YVISHP5x7B-mWZVGCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591928410494-ohfnnj2poc889kpsnri2amdohifu2arj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
